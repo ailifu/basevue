@@ -32,8 +32,9 @@ export default {
 .tabbaritem {
   flex: 1;
   text-align: center;
+  font-size: 0.4267rem;
   .iconfont {
-    font-size: 20px;
+    font-size: 0.5333rem;
   }
 }
 .tabbar-active {

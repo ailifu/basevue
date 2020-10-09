@@ -16,6 +16,6 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 50PX;
+  height: 1.3333rem;
 }
 </style>

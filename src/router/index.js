@@ -46,7 +46,7 @@ const routes = [
     }
   },
   {
-    path: " ",
+    path: "",
     redirect: "/home",
     beforeEnter: (to, from, next) => {
       document.title = to.meta.title;
