@@ -7,14 +7,14 @@ function resolve(dir) {
 module.exports = {
   lintOnSave: true,
   chainWebpack: config => {
-    config.module
-    .rule('less')
-    .oneOf('vue')
-    .use('px2rem-loader')
-    .loader('px2rem-loader')
-    .before('postcss-loader') // this makes it work.
-    .options({ remUnit: 75, remPrecision: 8 })
-    .end()
+    // config.module 这是配置less中px转rem的代码
+    // .rule('less')
+    // .oneOf('vue')
+    // .use('px2rem-loader')
+    // .loader('px2rem-loader')
+    // .before('postcss-loader') // this makes it work.
+    // .options({ remUnit: 75, remPrecision: 8 })
+    // .end()
     config.resolve.alias
       .set("@", resolve("src"))
       .set("components", resolve("src/components"))
