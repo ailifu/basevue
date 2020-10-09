@@ -1,7 +1,6 @@
-import {request} from "./api";
+import { request } from "./api";
 export function getmultidata() {
- return request({
-    url: "home/multidata",
-  }) 
+  return request({
+    url: "home/multidata"
+  });
 }
- 
