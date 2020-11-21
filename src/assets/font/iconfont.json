@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "11044942",
+      "name": "back",
+      "font_class": "back",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "9375257",
+      "name": "back-top",
+      "font_class": "fanhuidingbu",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "12154178",
+      "name": "收 藏",
+      "font_class": "shoucang",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
       "icon_id": "1134234",
       "name": "cart",
       "font_class": "cart",

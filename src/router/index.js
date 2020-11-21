@@ -4,6 +4,7 @@ const Home = () => import("views/Home/Home.vue");
 const List = () => import("views/List/List.vue");
 const Profile = () => import("views/Profile/Profile.vue");
 const Cart = () => import("views/Cart/Cart.vue");
+const Detail = () => import("views/Detail/Detail.vue");
 
 const originalPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location) {
@@ -63,7 +64,18 @@ const routes = [
       document.title = to.meta.title;
       next();
     }
-  }
+  },
+  {
+    path: "/detail",
+    component: Detail,
+    meta: {
+      title: "电影详情"
+    },
+    beforeEnter: (to, from, next) => {
+      document.title = to.meta.title;
+      next();
+    }
+  },
 ];
 
 const router = new VueRouter({

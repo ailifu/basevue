@@ -17,6 +17,10 @@ export default {
     display: flex;
     width: 100%;
     background-color: #f00;
+    position: relative;
+    top: 0;
+    left:0;
+    z-index: 100;
     .left,.right{
     width: 1.1733rem;
     }

@@ -1,18 +1,18 @@
 <template>
-  <Swiper>
-    <SwiperItem v-for="item in banners" :key="item.acm">
-      <a :href="item.link">
-        <img :src="item.image"  @load="imageoverload"/>
-      </a>
+<div class="detailimageSwiper">
+  <Swiper v-if="topImages.length">
+    <SwiperItem v-for="item in topImages" :key="item.acm"  >
+        <img :src="item"  @load="imageoverload"/>
     </SwiperItem>
   </Swiper>
+  </div>
 </template>
 <script>
 import { Swiper, SwiperItem } from "components/common/swiper";
 export default {
-  name: "HomeSwiper",
+  name: "DetailTopimage",
   props: {
-    banners: {
+    topImages: {
       type: Array,
       default: []
     }
@@ -34,4 +34,10 @@ export default {
   },
 };
 </script>
-<style lang="less"></style>
+ 
+<style lang="less"  >
+.detailimageSwiper{
+.swiper{ 
+  height:8rem;
+}}
+</style>

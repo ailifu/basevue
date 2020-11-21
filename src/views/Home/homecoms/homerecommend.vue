@@ -1,7 +1,7 @@
 <template>
   <div class="recommend">
-    <div class="recommend-item" v-for="item in recommends" :key="item">
-      <a :href="item.link"> <img :src="item.image" /> </a>
+    <div class="recommend-item" v-for="item in recommends" :key="item.link">
+      <a :href="item.link"> <img v-lazy="item.image" /> </a>
       <p>{{ item.title }}</p>
     </div>
   </div>
